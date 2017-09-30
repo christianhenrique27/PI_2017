@@ -1,4 +1,4 @@
-# Aplicativo Mobile (Android) supermecado.
+﻿# Aplicativo Mobile (Android) supermecado.
 
 ### Objetivo Principal
 
@@ -37,15 +37,13 @@ acabando com e necessidade de você sair do conforto de seu lar.
 * Area de ofertas 
 * Area de clientes cadastrados
 
-##### Parte App Android e IOS
-
 #### Aplicativo Android
+
+* Validar os campos de entrada para cadastro e login.
+* Permição de se cadastrar e logar em nosso app.
 
 
 #### Aplicativo Iphone
-
-
-#### Sistema Web
 
 
 #### Ferramentas Utilizadas
