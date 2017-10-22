@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nrs-gW-Lp6">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Login" customClass="EntrarViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7ew-iu-aZy">
+                                <rect key="frame" x="5" y="548" width="308" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="T0H-lP-xkI">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiI-M8-J13">
+                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cadastrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uA-gx-kcM">
+                                                <rect key="frame" x="51.5" y="0.0" width="63.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwW-wH-uMk">
+                                                <rect key="frame" x="131" y="0.0" width="56" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8K-bP-CnU">
+                                                <rect key="frame" x="203" y="0.0" width="58.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-tW-7lC">
+                                                <rect key="frame" x="277.5" y="0.0" width="30.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Login -  Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="wo2-ij-bPr">
+                                <rect key="frame" x="0.0" y="39" width="320" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="hU4-AF-pqS"/>
+                                    <constraint firstAttribute="height" constant="151" id="uDJ-22-lz3"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe seu E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-PK-ra5">
+                                <rect key="frame" x="5" y="198" width="310" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Informe sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t5F-ma-MT0">
+                                <rect key="frame" x="5" y="236" width="310" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azc-k6-XYZ">
+                                <rect key="frame" x="0.0" y="510" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="login_menu"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeC-JN-DMB">
+                                <rect key="frame" x="66" y="510" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cadastro_menu"/>
+                                <connections>
+                                    <segue destination="J3Q-eS-Jnc" kind="show" id="0pO-yU-K3z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udW-ps-qh9">
+                                <rect key="frame" x="143" y="510" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                                <connections>
+                                    <segue destination="hIO-sH-Vq4" kind="show" id="OMT-K7-25L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nke-jS-Z8O">
+                                <rect key="frame" x="212" y="510" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                                <connections>
+                                    <segue destination="A2h-1F-7t5" kind="show" id="5oF-4s-U3p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSG-kO-x6y">
+                                <rect key="frame" x="274" y="510" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mais_menu"/>
+                                <connections>
+                                    <segue destination="dmc-wL-iHa" kind="show" id="cwr-bx-735"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2j8-wx-o3s">
+                                <rect key="frame" x="115" y="296" width="91" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="KN9-Yj-2Vj"/>
+                                    <constraint firstAttribute="height" constant="30" id="wC4-gh-dAK"/>
+                                </constraints>
+                                <state key="normal" title="Entrar"/>
+                                <connections>
+                                    <action selector="entrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B21-KE-EEX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t5F-ma-MT0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="3Sd-KF-ulT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0TX-PK-ra5" secondAttribute="trailing" constant="5" id="7JK-WU-bl6"/>
+                            <constraint firstItem="wo2-ij-bPr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nbd-WQ-NqZ"/>
+                            <constraint firstItem="2j8-wx-o3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="Qrk-tg-SfJ"/>
+                            <constraint firstItem="wo2-ij-bPr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RBn-3S-Lid"/>
+                            <constraint firstItem="t5F-ma-MT0" firstAttribute="top" secondItem="0TX-PK-ra5" secondAttribute="bottom" constant="8" id="e2p-PJ-Ykp"/>
+                            <constraint firstItem="0TX-PK-ra5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="fIz-9p-xUE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2j8-wx-o3s" secondAttribute="trailing" constant="114" id="glg-wH-f7O"/>
+                            <constraint firstItem="2j8-wx-o3s" firstAttribute="top" secondItem="t5F-ma-MT0" secondAttribute="bottom" constant="30" id="i9r-Eh-QTe"/>
+                            <constraint firstItem="0TX-PK-ra5" firstAttribute="top" secondItem="wo2-ij-bPr" secondAttribute="bottom" constant="8" id="pgZ-yh-SRM"/>
+                            <constraint firstItem="wo2-ij-bPr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="39" id="y71-Qi-ujg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t5F-ma-MT0" secondAttribute="trailing" constant="5" id="yY9-PK-SDw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="bXx-0q-qbZ"/>
+                    <connections>
+                        <outlet property="entrarEmail" destination="0TX-PK-ra5" id="k4o-vR-9Sy"/>
+                        <outlet property="entrarSenha" destination="t5F-ma-MT0" id="4R1-33-R8q"/>
+                        <segue destination="3Ie-0h-u4l" kind="presentation" identifier="loginSegue" id="154-uz-4qy"/>
+                        <segue destination="3Ie-0h-u4l" kind="presentation" identifier="loginAutomaticoSegue" id="XXs-aj-DAU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="132"/>
+        </scene>
+        <!--Produtos-->
+        <scene sceneID="rTF-Bh-YJD">
+            <objects>
+                <viewController id="44a-7h-BPh" customClass="ProdutosViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rHt-jv-LdH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Produtos -  Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="qUg-U1-h6b">
+                                <rect key="frame" x="0.0" y="42" width="320" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="SKe-cD-GLj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbI-6d-cZ5" userLabel="Ofertas">
+                                <rect key="frame" x="194" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="oferta_menu"/>
+                                <connections>
+                                    <segue destination="clT-ae-vjL" kind="show" id="jbX-95-3a7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eu-E2-ReN" userLabel="Mais">
+                                <rect key="frame" x="263" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mais" image="mais_menu">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OHg-VP-Jwa" kind="show" id="t0n-Ty-y2W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNX-1e-mgB" userLabel="Produto">
+                                <rect key="frame" x="19" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="2fb-ei-74o">
+                                <rect key="frame" x="14" y="547" width="292" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARX-6B-TVd">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdB-IG-9V0">
+                                        <rect key="frame" x="90.5" y="0.0" width="66" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ofertas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gca-OX-2C4">
+                                        <rect key="frame" x="177.5" y="0.0" width="57.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6D-Jq-dni">
+                                        <rect key="frame" x="256" y="0.0" width="36" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3E-dB-N9y" userLabel="Carrinho">
+                                <rect key="frame" x="113" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                                <connections>
+                                    <segue destination="30w-8m-dTF" kind="show" id="Pfi-GG-63u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qUg-U1-h6b" firstAttribute="leading" secondItem="rHt-jv-LdH" secondAttribute="leading" id="DVA-tf-icK"/>
+                            <constraint firstAttribute="trailing" secondItem="qUg-U1-h6b" secondAttribute="trailing" id="Syj-yb-RbP"/>
+                            <constraint firstItem="qUg-U1-h6b" firstAttribute="top" secondItem="rHt-jv-LdH" secondAttribute="topMargin" constant="-22" id="zFa-C7-l0Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q5H-5O-Hk2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Produtos" id="k4J-6z-Cnr">
+                        <barButtonItem key="rightBarButtonItem" title="Sair" image="logaut_menu" id="FbG-5p-iX0">
+                            <connections>
+                                <action selector="sairUsuario:" destination="44a-7h-BPh" id="Tfy-rv-6LF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1v-VT-CPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771.25" y="153.16901408450704"/>
+        </scene>
+        <!--Carrinho-->
+        <scene sceneID="4RC-Zd-xIs">
+            <objects>
+                <viewController id="jHM-ny-fdK" customClass="CarrinhoViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDn-En-0wt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTI-Ll-Sfy" userLabel="Carrinho">
+                                <rect key="frame" x="113" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHh-ig-FOL" userLabel="Ofertas">
+                                <rect key="frame" x="194" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="oferta_menu"/>
+                                <connections>
+                                    <segue destination="clT-ae-vjL" kind="show" id="7Qj-Sm-FA1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMl-qa-JVb" userLabel="Mais">
+                                <rect key="frame" x="263" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mais" image="mais_menu">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OHg-VP-Jwa" kind="show" id="zuL-UV-e1T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTK-1J-T7C" userLabel="Produto">
+                                <rect key="frame" x="19" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                                <connections>
+                                    <segue destination="3Ie-0h-u4l" kind="show" id="SS4-Tt-Mll"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="3xa-oU-Rhm">
+                                <rect key="frame" x="14" y="547" width="292" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-8w-waw">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW4-bF-CVx">
+                                        <rect key="frame" x="90.5" y="0.0" width="66" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ofertas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVU-8W-cc2">
+                                        <rect key="frame" x="177.5" y="0.0" width="57.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlr-Vl-3CS">
+                                        <rect key="frame" x="256" y="0.0" width="36" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="919-t0-DWz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Carrinho" id="x6n-tL-g5n">
+                        <barButtonItem key="rightBarButtonItem" title="Sair" image="logaut_menu" id="gcQ-dy-6tV">
+                            <connections>
+                                <action selector="sairUsuario:" destination="jHM-ny-fdK" id="BA6-Xw-KdQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7T6-J7-ayp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2749" y="931"/>
+        </scene>
+        <!--Ofertas-->
+        <scene sceneID="JtO-7K-BdC">
+            <objects>
+                <viewController id="NhJ-Np-Ask" customClass="OfertasViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNg-rq-Cff">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MN8-fD-O5R" userLabel="Carrinho">
+                                <rect key="frame" x="111" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                                <connections>
+                                    <segue destination="30w-8m-dTF" kind="show" id="C0g-hJ-L6l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfP-N3-I2X" userLabel="Ofertas">
+                                <rect key="frame" x="192" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="oferta_menu"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtV-uS-Uzf" userLabel="Mais">
+                                <rect key="frame" x="261" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mais" image="mais_menu">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OHg-VP-Jwa" kind="show" id="tAF-g9-rkQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-Dz-3IB" userLabel="Produto">
+                                <rect key="frame" x="17" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                                <connections>
+                                    <segue destination="3Ie-0h-u4l" kind="show" id="NLl-PE-bin"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Nlg-P0-QeR">
+                                <rect key="frame" x="12" y="547" width="292" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHX-FJ-Qyi">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTp-qE-u3A">
+                                        <rect key="frame" x="90.5" y="0.0" width="66" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ofertas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbw-0Z-Qg6">
+                                        <rect key="frame" x="177.5" y="0.0" width="57.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciz-UH-hei">
+                                        <rect key="frame" x="256" y="0.0" width="36" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aBR-xG-tfH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ofertas" id="cGo-FN-aVU">
+                        <barButtonItem key="rightBarButtonItem" title="Sair" image="logaut_menu" id="fkk-TE-rHI">
+                            <connections>
+                                <action selector="sairUsuario:" destination="NhJ-Np-Ask" id="Vul-Qh-SOD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yze-F1-gQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="1631"/>
+        </scene>
+        <!--Mais-->
+        <scene sceneID="7JN-0x-LAC">
+            <objects>
+                <viewController id="x6w-Ub-6Pi" customClass="MaisViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cLv-wu-j1M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhU-L8-Gbu" userLabel="Carrinho">
+                                <rect key="frame" x="113" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                                <connections>
+                                    <segue destination="30w-8m-dTF" kind="show" id="yaR-g4-MvM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQC-j6-4ay" userLabel="Ofertas">
+                                <rect key="frame" x="194" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="oferta_menu"/>
+                                <connections>
+                                    <segue destination="clT-ae-vjL" kind="show" id="1PV-vh-Ts7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4N7-E1-qRj" userLabel="Mais">
+                                <rect key="frame" x="263" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mais" image="mais_menu">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUh-6N-Qx8" userLabel="Produto">
+                                <rect key="frame" x="19" y="509" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                                <connections>
+                                    <segue destination="3Ie-0h-u4l" kind="show" id="Nyd-ad-1gp"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="k7D-Pd-qB0">
+                                <rect key="frame" x="14" y="547" width="292" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd8-mE-UXw">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOA-R9-wCB">
+                                        <rect key="frame" x="90.5" y="0.0" width="66" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ofertas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HD-bx-HyF">
+                                        <rect key="frame" x="177.5" y="0.0" width="57.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bR-St-FO3">
+                                        <rect key="frame" x="256" y="0.0" width="36" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wum-Ti-hpr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mais" id="veE-G5-QpO">
+                        <barButtonItem key="rightBarButtonItem" title="Sair" image="logaut_menu" id="lHB-jE-Lxn">
+                            <connections>
+                                <action selector="sairUsuario:" destination="x6w-Ub-6Pi" id="8hX-zZ-t20"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdd-NX-wDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2749" y="2330"/>
+        </scene>
+        <!--Cadastrar-->
+        <scene sceneID="9ih-9V-RTx">
+            <objects>
+                <viewController title="Cadastrar" id="ZQM-S9-VF7" customClass="CadastrarViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e4J-zJ-9qr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cadastrarc - Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="YDs-Gd-vKZ">
+                                <rect key="frame" x="0.0" y="39" width="320" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="CZc-1B-CYc"/>
+                                    <constraint firstAttribute="width" constant="320" id="L9x-xg-q0g"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fqx-yR-5fz">
+                                <rect key="frame" x="8" y="206" width="304" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-nP-WVW">
+                                <rect key="frame" x="8" y="244" width="304" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftm-SY-4Ut">
+                                <rect key="frame" x="8" y="282" width="304" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk3-7k-Znm">
+                                <rect key="frame" x="112" y="320" width="96" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="1eb-QX-Osn"/>
+                                    <constraint firstAttribute="height" constant="30" id="Voh-7s-whY"/>
+                                </constraints>
+                                <state key="normal" title="Cadastra-se"/>
+                                <connections>
+                                    <action selector="criarConta:" destination="ZQM-S9-VF7" eventType="touchUpInside" id="fde-on-CDp"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JWb-a0-YSk">
+                                <rect key="frame" x="5" y="551" width="308" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="17E-XJ-7Cg">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDW-Zi-W5w">
+                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cadastrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQY-zC-vkB">
+                                                <rect key="frame" x="51.5" y="0.0" width="63.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwR-xe-sxD">
+                                                <rect key="frame" x="131" y="0.0" width="56" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g2-m0-FmJ">
+                                                <rect key="frame" x="203" y="0.0" width="58.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmA-tn-krl">
+                                                <rect key="frame" x="277.5" y="0.0" width="30.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmd-lE-2ZI">
+                                <rect key="frame" x="0.0" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="login_menu"/>
+                                <connections>
+                                    <segue destination="Nrs-gW-Lp6" kind="show" id="bOC-lt-Eu5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boq-Gs-3tN">
+                                <rect key="frame" x="143" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                                <connections>
+                                    <segue destination="hIO-sH-Vq4" kind="show" id="RSs-BJ-B6Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgo-xN-gNg">
+                                <rect key="frame" x="212" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                                <connections>
+                                    <segue destination="A2h-1F-7t5" kind="show" id="2ZL-t6-2xh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH3-9A-rGK">
+                                <rect key="frame" x="274" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mais_menu"/>
+                                <connections>
+                                    <segue destination="dmc-wL-iHa" kind="show" id="qpm-VO-jrS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3c-Fe-kl8">
+                                <rect key="frame" x="68" y="513" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cadastro_menu"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h5G-nP-WVW" firstAttribute="leading" secondItem="we9-aZ-xrN" secondAttribute="leading" constant="8" id="05j-uR-Bxy"/>
+                            <constraint firstItem="Qk3-7k-Znm" firstAttribute="top" secondItem="ftm-SY-4Ut" secondAttribute="bottom" constant="8" id="3H1-gB-Llo"/>
+                            <constraint firstItem="we9-aZ-xrN" firstAttribute="trailing" secondItem="h5G-nP-WVW" secondAttribute="trailing" constant="8" id="5fu-lt-Gg6"/>
+                            <constraint firstItem="YDs-Gd-vKZ" firstAttribute="top" secondItem="e4J-zJ-9qr" secondAttribute="top" constant="39" id="EG1-vd-fOs"/>
+                            <constraint firstItem="we9-aZ-xrN" firstAttribute="trailing" secondItem="Qk3-7k-Znm" secondAttribute="trailing" constant="112" id="EW6-24-7M7"/>
+                            <constraint firstItem="Qk3-7k-Znm" firstAttribute="leading" secondItem="we9-aZ-xrN" secondAttribute="leading" constant="112" id="Ji3-GP-dVa"/>
+                            <constraint firstItem="ftm-SY-4Ut" firstAttribute="leading" secondItem="we9-aZ-xrN" secondAttribute="leading" constant="8" id="PMk-G5-VK1"/>
+                            <constraint firstItem="Fqx-yR-5fz" firstAttribute="top" secondItem="YDs-Gd-vKZ" secondAttribute="bottom" constant="16" id="Q3v-jP-yFt"/>
+                            <constraint firstItem="Fqx-yR-5fz" firstAttribute="leading" secondItem="we9-aZ-xrN" secondAttribute="leading" constant="8" id="Ycd-Cm-P4y"/>
+                            <constraint firstItem="we9-aZ-xrN" firstAttribute="trailing" secondItem="Fqx-yR-5fz" secondAttribute="trailing" constant="8" id="dQD-dw-jTK"/>
+                            <constraint firstItem="we9-aZ-xrN" firstAttribute="trailing" secondItem="ftm-SY-4Ut" secondAttribute="trailing" constant="8" id="ieP-CG-jG6"/>
+                            <constraint firstItem="YDs-Gd-vKZ" firstAttribute="leading" secondItem="we9-aZ-xrN" secondAttribute="leading" id="jrc-HP-xuQ"/>
+                            <constraint firstItem="ftm-SY-4Ut" firstAttribute="top" secondItem="h5G-nP-WVW" secondAttribute="bottom" constant="8" id="oA7-Ug-avN"/>
+                            <constraint firstItem="h5G-nP-WVW" firstAttribute="top" secondItem="Fqx-yR-5fz" secondAttribute="bottom" constant="8" id="qn8-1h-rSx"/>
+                            <constraint firstItem="YDs-Gd-vKZ" firstAttribute="trailing" secondItem="we9-aZ-xrN" secondAttribute="trailing" id="up6-Gr-t2c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="we9-aZ-xrN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cadastrar" id="ShU-Mn-JK6"/>
+                    <connections>
+                        <outlet property="email" destination="Fqx-yR-5fz" id="oNn-kF-36H"/>
+                        <outlet property="senha" destination="h5G-nP-WVW" id="aqz-Sh-grA"/>
+                        <outlet property="senhaConfirmacao" destination="ftm-SY-4Ut" id="ATY-Mz-LjR"/>
+                        <segue destination="3Ie-0h-u4l" kind="presentation" identifier="cadastroSegue" id="RAC-nS-1T1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zah-qD-2Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="827.11267605633805"/>
+        </scene>
+        <!--Carrinho-->
+        <scene sceneID="bSK-wq-a32">
+            <objects>
+                <viewController id="sSb-oe-F1N" userLabel="Carrinho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="15l-v5-IbW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Carrinhi -  Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ik4-73-kvT">
+                                <rect key="frame" x="0.0" y="39" width="320" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="AVI-fj-VcK"/>
+                                    <constraint firstAttribute="height" constant="151" id="wKy-6l-sjO"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rF8-dl-bNt">
+                                <rect key="frame" x="5" y="551" width="308" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jJ7-qR-PG6">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="typ-X3-phx">
+                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cadastrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKE-le-ypw">
+                                                <rect key="frame" x="51.5" y="0.0" width="63.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g64-7R-pKB">
+                                                <rect key="frame" x="131" y="0.0" width="56" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdK-oU-IpH">
+                                                <rect key="frame" x="203" y="0.0" width="58.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-Nc-ybZ">
+                                                <rect key="frame" x="277.5" y="0.0" width="30.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALu-qQ-AP7">
+                                <rect key="frame" x="0.0" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="login_menu"/>
+                                <connections>
+                                    <segue destination="Nrs-gW-Lp6" kind="show" id="ogL-as-xDr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ho7-Sv-acE">
+                                <rect key="frame" x="68" y="513" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cadastro_menu"/>
+                                <connections>
+                                    <segue destination="J3Q-eS-Jnc" kind="show" id="YaH-7m-19f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8C-P8-Afd">
+                                <rect key="frame" x="143" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzX-aR-nI0">
+                                <rect key="frame" x="212" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                                <connections>
+                                    <segue destination="A2h-1F-7t5" kind="show" id="ZRS-3Z-NkJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4Z-fR-hZI">
+                                <rect key="frame" x="274" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mais_menu"/>
+                                <connections>
+                                    <segue destination="dmc-wL-iHa" kind="show" id="ALp-QI-Hei"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ik4-73-kvT" firstAttribute="trailing" secondItem="2rr-fv-pP5" secondAttribute="trailing" id="RH7-nt-Rtb"/>
+                            <constraint firstItem="ik4-73-kvT" firstAttribute="leading" secondItem="2rr-fv-pP5" secondAttribute="leading" id="ei4-5x-hKF"/>
+                            <constraint firstItem="ik4-73-kvT" firstAttribute="top" secondItem="15l-v5-IbW" secondAttribute="top" constant="39" id="mT2-r2-wjD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2rr-fv-pP5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Carrinho" id="9rJ-Ae-1P1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ow8-rZ-nX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="1499"/>
+        </scene>
+        <!--Produtos-->
+        <scene sceneID="lwM-JB-13Q">
+            <objects>
+                <viewController id="AKG-Az-PHv" userLabel="Produtos" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HfD-cT-9Wt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Produtos -  Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="FgW-Yp-rpx">
+                                <rect key="frame" x="0.0" y="38" width="320" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="AgD-cU-2Js"/>
+                                    <constraint firstAttribute="height" constant="151" id="eV6-S8-pua"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="heC-b3-mBU">
+                                <rect key="frame" x="5" y="551" width="308" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vdk-Pi-3kr">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRY-x1-u16">
+                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cadastrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-Qe-dnL">
+                                                <rect key="frame" x="51.5" y="0.0" width="63.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD8-oV-eRA">
+                                                <rect key="frame" x="131" y="0.0" width="56" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doe-Vv-X17">
+                                                <rect key="frame" x="203" y="0.0" width="58.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSf-lg-Rhy">
+                                                <rect key="frame" x="277.5" y="0.0" width="30.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr1-64-tet">
+                                <rect key="frame" x="0.0" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="login_menu"/>
+                                <connections>
+                                    <segue destination="Nrs-gW-Lp6" kind="show" id="UhI-OD-zAi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJo-Xp-GEf">
+                                <rect key="frame" x="68" y="513" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cadastro_menu"/>
+                                <connections>
+                                    <segue destination="J3Q-eS-Jnc" kind="show" id="VLb-LP-CNI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUm-oF-vDb">
+                                <rect key="frame" x="143" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                                <connections>
+                                    <segue destination="hIO-sH-Vq4" kind="show" id="z7t-Zm-3hO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apr-EB-pCu">
+                                <rect key="frame" x="212" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8N-nP-1wL">
+                                <rect key="frame" x="274" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mais_menu"/>
+                                <connections>
+                                    <segue destination="dmc-wL-iHa" kind="show" id="Mpy-qm-38W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FgW-Yp-rpx" firstAttribute="trailing" secondItem="DQQ-Tz-3ad" secondAttribute="trailing" id="6YL-nu-eFx"/>
+                            <constraint firstItem="FgW-Yp-rpx" firstAttribute="leading" secondItem="DQQ-Tz-3ad" secondAttribute="leading" id="aI5-oy-zoH"/>
+                            <constraint firstItem="FgW-Yp-rpx" firstAttribute="top" secondItem="HfD-cT-9Wt" secondAttribute="top" constant="38" id="mAb-c8-799"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DQQ-Tz-3ad"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Produtos" id="azZ-lz-rUj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRk-O9-Djg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="2178"/>
+        </scene>
+        <!--Mais-->
+        <scene sceneID="kDz-Pq-ZhS">
+            <objects>
+                <viewController id="tvd-0S-aKS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="enF-hT-815">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ofertas -  Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="pam-Js-WpB">
+                                <rect key="frame" x="0.0" y="38" width="320" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="OBW-bG-n84"/>
+                                    <constraint firstAttribute="width" constant="320" id="udZ-qK-7QB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ca2-Te-nAZ">
+                                <rect key="frame" x="5" y="551" width="308" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lyp-cg-uDd">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgf-LD-s0X">
+                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cadastrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3t-vO-pdM">
+                                                <rect key="frame" x="51.5" y="0.0" width="63.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carrinho" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AP8-tP-Chb">
+                                                <rect key="frame" x="131" y="0.0" width="56" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Produtos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adE-WZ-NH6">
+                                                <rect key="frame" x="203" y="0.0" width="58.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Mais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQN-HG-nKP">
+                                                <rect key="frame" x="277.5" y="0.0" width="30.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQA-sJ-yAU">
+                                <rect key="frame" x="0.0" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="login_menu"/>
+                                <connections>
+                                    <segue destination="Nrs-gW-Lp6" kind="show" id="lMw-U8-3Jr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKG-3Q-0jY">
+                                <rect key="frame" x="68" y="513" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="cadastro_menu"/>
+                                <connections>
+                                    <segue destination="J3Q-eS-Jnc" kind="show" id="fVT-CA-ETR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6p-AA-mIy">
+                                <rect key="frame" x="143" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="carrinho_menu"/>
+                                <connections>
+                                    <segue destination="hIO-sH-Vq4" kind="show" id="suS-Se-yZj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49k-r7-zEB">
+                                <rect key="frame" x="212" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mercado_menu"/>
+                                <connections>
+                                    <segue destination="A2h-1F-7t5" kind="show" id="bzC-hr-iXv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-M9-5hP">
+                                <rect key="frame" x="274" y="513" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="mais_menu"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pam-Js-WpB" firstAttribute="leading" secondItem="qP7-Na-vAl" secondAttribute="leading" id="Iu8-6K-st1"/>
+                            <constraint firstItem="pam-Js-WpB" firstAttribute="trailing" secondItem="qP7-Na-vAl" secondAttribute="trailing" id="WdG-LZ-btL"/>
+                            <constraint firstItem="pam-Js-WpB" firstAttribute="top" secondItem="enF-hT-815" secondAttribute="top" constant="38" id="lIT-jl-GtJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qP7-Na-vAl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mais" id="OXe-iK-3VC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4P-G7-txg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="2870"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="F8d-r4-j4k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nrs-gW-Lp6" userLabel="Login" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EXk-Bq-3RD">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AKP-oP-rSN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gt1-hr-d4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="154"/>
+        </scene>
+        <!--Cadastrar-->
+        <scene sceneID="CN4-xS-iT7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J3Q-eS-Jnc" userLabel="Cadastrar" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gaz-1k-lPX">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZQM-S9-VF7" kind="relationship" relationship="rootViewController" id="YNX-WQ-0w5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0p-D4-hHo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="851"/>
+        </scene>
+        <!--Carrinho-->
+        <scene sceneID="6mF-5G-tP3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hIO-sH-Vq4" userLabel="Carrinho" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PoR-ZB-Cn0">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sSb-oe-F1N" kind="relationship" relationship="rootViewController" id="ryh-ea-4li"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9j-NO-DNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="1499"/>
+        </scene>
+        <!--Produtos-->
+        <scene sceneID="4jT-Bf-2xe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A2h-1F-7t5" userLabel="Produtos" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="eYq-e5-dPK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FZ0-cG-jG9">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AKG-Az-PHv" kind="relationship" relationship="rootViewController" id="0JZ-O0-2fJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RdC-p1-Mu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="2179"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pSn-8u-BMx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dmc-wL-iHa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CYa-o4-ahd">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tvd-0S-aKS" kind="relationship" relationship="rootViewController" id="ggk-XW-XJ4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Unx-cN-MoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="2871"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pcR-ie-Ct8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ie-0h-u4l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DYJ-jD-JL0">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="44a-7h-BPh" kind="relationship" relationship="rootViewController" id="xUu-yk-EI9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tpd-Di-AzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637" y="154"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QfV-R6-x2W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="30w-8m-dTF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N2I-oD-Qsi">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jHM-ny-fdK" kind="relationship" relationship="rootViewController" id="fOR-B7-xXe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72Q-ZD-kMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637" y="931"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vmt-Iw-a4B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clT-ae-vjL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z94-A8-KgB">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NhJ-Np-Ask" kind="relationship" relationship="rootViewController" id="VWU-Ho-R8e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjS-MD-REU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637" y="1631"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eeQ-1i-ghj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OHg-VP-Jwa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="chN-fV-zMk">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x6w-Ub-6Pi" kind="relationship" relationship="rootViewController" id="TdZ-Wk-j0t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2A9-mb-doQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637" y="2330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cadastrarc - Fundo" width="676" height="334"/>
+        <image name="Carrinhi -  Fundo" width="676" height="342"/>
+        <image name="Login -  Fundo" width="676" height="338"/>
+        <image name="Ofertas -  Fundo" width="676" height="345"/>
+        <image name="Produtos -  Fundo" width="676" height="339"/>
+        <image name="cadastro_menu" width="46" height="30"/>
+        <image name="carrinho_menu" width="46" height="30"/>
+        <image name="logaut_menu" width="46" height="30"/>
+        <image name="login_menu" width="46" height="30"/>
+        <image name="mais_menu" width="46" height="30"/>
+        <image name="mercado_menu" width="46" height="30"/>
+        <image name="oferta_menu" width="46" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="zuL-UV-e1T"/>
+        <segue reference="7Qj-Sm-FA1"/>
+        <segue reference="yaR-g4-MvM"/>
+        <segue reference="154-uz-4qy"/>
+        <segue reference="cwr-bx-735"/>
+        <segue reference="5oF-4s-U3p"/>
+        <segue reference="OMT-K7-25L"/>
+        <segue reference="0pO-yU-K3z"/>
+        <segue reference="bOC-lt-Eu5"/>
+    </inferredMetricsTieBreakers>
+</document>
