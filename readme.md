@@ -41,13 +41,13 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 * Validar os campos de entrada para cadastro e login.
 * Permição de se cadastrar e logar em nosso app.
-* Salvando dados pessoais no Firebase;
+* Salvando dados pessoais no Firebase.
 
 
 #### Aplicativo Iphone
 * Validar os campos de entrada para cadastro e login.
 * Criação de usuarios para o app;
 * Implementação do CocoaPods no app;
-* Salvando dados pessoais no Firebase;
+* Salvando dados pessoais no Firebase.
 
 #### Ferramentas Utilizadas
