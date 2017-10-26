@@ -45,9 +45,14 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 
 #### Aplicativo Iphone
+
 * Validar os campos de entrada para cadastro e login.
 * Criação de usuarios para o app;
 * Implementação do CocoaPods no app;
 * Salvando dados pessoais no Firebase.
 
 #### Ferramentas Utilizadas
+
+* FireBase
+* XCODE
+* AndroidStudio
