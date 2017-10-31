@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.easyshop.easyshop.activitys.fragmentos.Logar">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/logar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/usuarioLogar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="200dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textColorLink="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/senhaLogar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:textColorLink="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="30dp"
+                android:text="LOGAR"
+                android:textColor="@android:color/background_light"
+                android:theme="@style/botaoPadrao" />
+
+            <TextView
+                android:id="@+id/linkCadastrar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="30dp"
+                android:onClick="linkCadastrar"
+                android:text="Cadastrar - se"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="35dp"
+                android:padding="10dp"
+                android:text="OBS: Para fazer suas compras e necessário que você esteja logado!"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
