@@ -33,9 +33,6 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 * Area de login
 * Area de recebimento de produtos 
-* Area de graficos (lucro , estoque, etc)
-* Area de ofertas 
-* Area de clientes cadastrados
 
 #### Aplicativo Android
 
@@ -50,6 +47,16 @@ acabando com e necessidade de você sair do conforto de seu lar.
 * Criação de usuarios para o app;
 * Implementação do CocoaPods no app;
 * Salvando dados pessoais no Firebase.
+
+#### Novembro
+
+##### Parte sistema web
+
+* Area de graficos (lucro , estoque, etc)
+* Area de ofertas 
+* Area de clientes cadastrados
+* Desing gráfico completo
+
 
 #### Ferramentas Utilizadas
 
