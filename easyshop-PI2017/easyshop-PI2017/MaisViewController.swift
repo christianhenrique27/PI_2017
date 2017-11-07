@@ -11,8 +11,9 @@ import FirebaseAuth
 
 class MaisViewController: UIViewController {
    
-    @IBAction func sairUsuario(_ sender: Any) {
-    
+   
+    @IBAction func deslogarUsuario(_ sender: Any) {
+        
         let autenticacao = Auth.auth();
         
         // Sair do usuario se ele estiver logado;
@@ -25,7 +26,6 @@ class MaisViewController: UIViewController {
         } catch {
             print("Erro ao deslogar o usuario");
         }
-    
     }
     
     

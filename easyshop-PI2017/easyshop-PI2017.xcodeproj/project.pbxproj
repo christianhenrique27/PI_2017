@@ -38,6 +38,7 @@
 		7F83BA881F9BE16C00C46713 /* CarrinhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
 		7F83BA8A1F9BE62100C46713 /* OfertasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertasViewController.swift; sourceTree = "<group>"; };
 		7F87726B1F9A5DC200B9BFEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7FB4ACD11F9F81BA009F30CA /* easyshop-PI2017-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "easyshop-PI2017-Bridging-Header.h"; sourceTree = "<group>"; };
 		9A49260B921D7242E8E1B2B2 /* Pods-easyshop-PI2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyshop-PI2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easyshop-PI2017/Pods-easyshop-PI2017.debug.xcconfig"; sourceTree = "<group>"; };
 		EC2D3EFCBFE3A4BB73971289 /* Pods_easyshop_PI2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easyshop_PI2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,6 +97,7 @@
 				7F87726B1F9A5DC200B9BFEE /* GoogleService-Info.plist */,
 				7F5A8E391F9A340D003447F0 /* LaunchScreen.storyboard */,
 				7F5A8E3C1F9A340D003447F0 /* Info.plist */,
+				7FB4ACD11F9F81BA009F30CA /* easyshop-PI2017-Bridging-Header.h */,
 			);
 			path = "easyshop-PI2017";
 			sourceTree = "<group>";
@@ -144,6 +146,7 @@
 				TargetAttributes = {
 					7F5A8E2C1F9A340D003447F0 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -389,11 +392,14 @@
 			baseConfigurationReference = 9A49260B921D7242E8E1B2B2 /* Pods-easyshop-PI2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9N22F54ZWZ;
 				INFOPLIST_FILE = "easyshop-PI2017/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unipam.easyshop-PI2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "easyshop-PI2017/easyshop-PI2017-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,11 +410,13 @@
 			baseConfigurationReference = 2822F3D267544751968B5514 /* Pods-easyshop-PI2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9N22F54ZWZ;
 				INFOPLIST_FILE = "easyshop-PI2017/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unipam.easyshop-PI2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "easyshop-PI2017/easyshop-PI2017-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,26 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class CarrinhoViewController: UIViewController {
-    
-    @IBAction func sairUsuario(_ sender: Any) {
-    
-        let autenticacao = Auth.auth();
-        
-        // Sair do usuario se ele estiver logado;
-        
-        do {
-            try autenticacao.signOut()
-            
-            dismiss(animated: true, completion: nil)
-            
-        } catch {
-            print("Erro ao deslogar o usuario");
-        }
-    
-    }
-    
-    
-    
+
     //Esconder o teclado
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

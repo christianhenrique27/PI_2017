@@ -11,7 +11,7 @@ import FirebaseAuth
 
 class OfertasViewController: UIViewController {
 
-    @IBAction func sairUsuario(_ sender: Any) {
+    @IBAction func sairLogin(_ sender: Any) {
         
         let autenticacao = Auth.auth();
         
@@ -25,9 +25,9 @@ class OfertasViewController: UIViewController {
         } catch {
             print("Erro ao deslogar o usuario");
         }
-    
-    
+        
     }
+    
     
     //Esconder o teclado
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

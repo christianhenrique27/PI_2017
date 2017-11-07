@@ -37,7 +37,7 @@ class EntrarViewController: UIViewController {
                             
                             //Redirecionar o usuario para tela principal;
                             
-                            self.performSegue(withIdentifier: "loginSegue", sender: nil);
+                            self.performSegue(withIdentifier: "loginAutomaticoSegue", sender: nil)
                             
                         }
                         
@@ -56,9 +56,6 @@ class EntrarViewController: UIViewController {
         }
         
     }
-    
-    
-    
     
 
     override func viewDidLoad() {

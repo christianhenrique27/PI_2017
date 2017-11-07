@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let autenticacao = Auth.auth()
         
        /* Sair do usuario se ele estiver logado;
         
@@ -26,14 +25,14 @@ class ViewController: UIViewController {
             print("Erro ao deslogar o usuario");
         } */
         
-        
+        let autenticacao = Auth.auth()
         
         // Verificar se o usuario esta logado;
         autenticacao.addStateDidChangeListener { (autenticacao, usuario) in
             
             if let usuarioLogado = usuario{
                 
-                self.performSegue(withIdentifier: "loginAutomaticoSegue", sender: nil)
+                self.performSegue(withIdentifier: "loginTelaPrincipal", sender: nil)
                 
             }
         }

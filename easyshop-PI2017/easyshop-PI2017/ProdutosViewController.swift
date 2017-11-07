@@ -11,24 +11,6 @@ import FirebaseAuth
 
 class ProdutosViewController: UIViewController {
     
-    @IBAction func sairUsuario(_ sender: Any) {
-    
-        let autenticacao = Auth.auth();
-        
-       // Sair do usuario se ele estiver logado;
-        
-        do {
-            try autenticacao.signOut()
-            
-            dismiss(animated: true, completion: nil)
-            
-        } catch {
-            print("Erro ao deslogar o usuario");
-        }
-    
-    
-    }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
