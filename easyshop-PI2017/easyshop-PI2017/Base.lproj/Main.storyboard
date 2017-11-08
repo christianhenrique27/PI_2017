@@ -111,42 +111,6 @@
             </objects>
             <point key="canvasLocation" x="511.875" y="130.98591549295776"/>
         </scene>
-        <!--Produtos-->
-        <scene sceneID="rTF-Bh-YJD">
-            <objects>
-                <viewController id="44a-7h-BPh" customClass="ProdutosViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rHt-jv-LdH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Produtos -  Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="qUg-U1-h6b">
-                                <rect key="frame" x="0.0" y="-2" width="320" height="151"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="151" id="SKe-cD-GLj"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="qUg-U1-h6b" firstAttribute="leading" secondItem="rHt-jv-LdH" secondAttribute="leading" id="DVA-tf-icK"/>
-                            <constraint firstAttribute="trailing" secondItem="qUg-U1-h6b" secondAttribute="trailing" id="Syj-yb-RbP"/>
-                            <constraint firstItem="qUg-U1-h6b" firstAttribute="top" secondItem="rHt-jv-LdH" secondAttribute="topMargin" constant="-22" id="zFa-C7-l0Q"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Q5H-5O-Hk2"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Produtos" image="mercado_menu" id="LZw-Ye-nLb"/>
-                    <navigationItem key="navigationItem" title="Produtos" id="k4J-6z-Cnr">
-                        <barButtonItem key="rightBarButtonItem" title="Sair" image="logaut_menu" id="FbG-5p-iX0">
-                            <connections>
-                                <action selector="sairUsuario:" destination="44a-7h-BPh" id="Tfy-rv-6LF"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A1v-VT-CPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3337.5" y="150"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ibx-pL-fPZ">
             <objects>
@@ -159,7 +123,7 @@
                         <color key="selectedImageTintColor" red="0.85249608755111694" green="0.11970607191324234" blue="0.050706014037132263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="44a-7h-BPh" kind="relationship" relationship="viewControllers" id="0Q8-mf-DIG"/>
+                        <segue destination="o5K-Z2-fYa" kind="relationship" relationship="viewControllers" id="n99-Ld-zlH"/>
                         <segue destination="30w-8m-dTF" kind="relationship" relationship="viewControllers" id="jRQ-aM-vVq"/>
                         <segue destination="NhJ-Np-Ask" kind="relationship" relationship="viewControllers" id="QBl-Yp-W8W"/>
                         <segue destination="x6w-Ub-6Pi" kind="relationship" relationship="viewControllers" id="Vba-kz-Aqc"/>
@@ -169,35 +133,49 @@
             </objects>
             <point key="canvasLocation" x="2569" y="236"/>
         </scene>
+        <!--Produtos-->
+        <scene sceneID="1gI-YI-bBi">
+            <objects>
+                <tableViewController id="o5K-Z2-fYa" customClass="ProdutosViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cqk-JU-dWq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="celulaReuso" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" rowHeight="70" id="9fh-cQ-wRZ">
+                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fh-cQ-wRZ" id="VOX-nu-PDn">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="o5K-Z2-fYa" id="bqQ-Py-xoJ"/>
+                            <outlet property="delegate" destination="o5K-Z2-fYa" id="okg-dW-I2W"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Produtos" image="mercado_menu" id="rq6-sN-sbn"/>
+                    <navigationItem key="navigationItem" id="6Ct-Ht-TLW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TO6-dq-tQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3768.75" y="216.5492957746479"/>
+        </scene>
         <!--Carrinho-->
         <scene sceneID="4RC-Zd-xIs">
             <objects>
-                <viewController id="jHM-ny-fdK" customClass="CarrinhoViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jHM-ny-fdK" customClass="ProdutosViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HCL-iM-q3o">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gs3-Wd-BQa">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" id="gs3-Wd-BQa">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gs3-Wd-BQa" id="e3L-ko-LMF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fUy-fw-lcv">
-                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fUy-fw-lcv" id="ghX-nT-xXt">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SIm-kb-7E9">
-                                <rect key="frame" x="0.0" y="116" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SIm-kb-7E9" id="bYE-3M-Jty">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -413,7 +391,7 @@
         <!--Produtos-->
         <scene sceneID="lwM-JB-13Q">
             <objects>
-                <viewController id="AKG-Az-PHv" userLabel="Produtos" sceneMemberID="viewController">
+                <viewController id="AKG-Az-PHv" userLabel="Produtos" customClass="ProdutoTableViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HfD-cT-9Wt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -565,7 +543,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="154-uz-4qy"/>
-        <segue reference="nFq-H9-ngU"/>
+        <segue reference="Mqc-3d-Hfx"/>
         <segue reference="QBl-Yp-W8W"/>
         <segue reference="eWW-Ys-HLj"/>
     </inferredMetricsTieBreakers>

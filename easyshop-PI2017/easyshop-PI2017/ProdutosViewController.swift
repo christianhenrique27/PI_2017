@@ -2,26 +2,88 @@
 //  ProdutosViewController.swift
 //  easyshop-PI2017
 //
-//  Created by uillian on 21/10/2017.
+//  Created by uillian on 08/11/2017.
 //  Copyright © 2017 uillian. All rights reserved.
 //
 
 import UIKit
-import FirebaseAuth
 
-class ProdutosViewController: UIViewController {
+class ProdutosViewController: UITableViewController {
     
-
+    var filmes: [Filme] = []
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    
+            
+            var filme : Filme
+            filme = Filme(titulo: "filme 1", descricao: "filme 1")
+            filmes.append( filme )
+            
+            filme = Filme(titulo: "filme 2", descricao: "filme 2")
+            filmes.append( filme )
+            
+            filme = Filme(titulo: "filme 3", descricao: "filme 3")
+            filmes.append( filme )
+        
+            filme = Filme(titulo: "filme 4", descricao: "filme 4")
+            filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 1", descricao: "filme 1")
+        filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 2", descricao: "filme 2")
+        filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 3", descricao: "filme 3")
+        filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 4", descricao: "filme 4")
+        filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 1", descricao: "filme 1")
+        filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 2", descricao: "filme 2")
+        filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 3", descricao: "filme 3")
+        filmes.append( filme )
+        
+        filme = Filme(titulo: "filme 4", descricao: "filme 4")
+        filmes.append( filme )
+        
+        
+        
+            
     }
     
-    //Esconder o teclado
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
+        override func numberOfSections(in: UITableView) -> Int{
+            
+            return 1
+            
+        }
+        
+        
+        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return filmes.count
+        }
+        
+        override func tableView( _ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+            let filme: Filme = filmes [indexPath.row]
+            let celulaReuso = "celulaReuso"
+            
+            let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath)
+            celula.textLabel?.text = filme.titulo
+            
+            return celula
+            
+        }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,14 +91,5 @@ class ProdutosViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
