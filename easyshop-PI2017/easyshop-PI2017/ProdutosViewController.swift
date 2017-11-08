@@ -20,41 +20,17 @@ class ProdutosViewController: UITableViewController {
     
             
             var filme : Filme
-            filme = Filme(titulo: "filme 1", descricao: "filme 1")
+        filme = Filme(titulo: "filme 1", descricao: "filme 1", imagem: #imageLiteral(resourceName: "produto1"))
             filmes.append( filme )
             
-            filme = Filme(titulo: "filme 2", descricao: "filme 2")
+        filme = Filme(titulo: "filme 2", descricao: "filme 2", imagem: #imageLiteral(resourceName: "produto2"))
             filmes.append( filme )
             
-            filme = Filme(titulo: "filme 3", descricao: "filme 3")
+        filme = Filme(titulo: "filme 3", descricao: "filme 3", imagem: #imageLiteral(resourceName: "produto3"))
             filmes.append( filme )
         
-            filme = Filme(titulo: "filme 4", descricao: "filme 4")
+        filme = Filme(titulo: "filme 4", descricao: "filme 4", imagem: #imageLiteral(resourceName: "produto4"))
             filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 1", descricao: "filme 1")
-        filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 2", descricao: "filme 2")
-        filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 3", descricao: "filme 3")
-        filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 4", descricao: "filme 4")
-        filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 1", descricao: "filme 1")
-        filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 2", descricao: "filme 2")
-        filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 3", descricao: "filme 3")
-        filmes.append( filme )
-        
-        filme = Filme(titulo: "filme 4", descricao: "filme 4")
-        filmes.append( filme )
         
         
         
@@ -79,6 +55,7 @@ class ProdutosViewController: UITableViewController {
             
             let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath)
             celula.textLabel?.text = filme.titulo
+            celula.imageView?.image = filme.imagem
             
             return celula
             
