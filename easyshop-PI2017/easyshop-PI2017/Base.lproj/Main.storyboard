@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GeorgiaBold.ttf">
+            <string>Georgia-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -123,9 +128,9 @@
                         <color key="selectedImageTintColor" red="0.85249608755111694" green="0.11970607191324234" blue="0.050706014037132263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="o5K-Z2-fYa" kind="relationship" relationship="viewControllers" id="n99-Ld-zlH"/>
-                        <segue destination="30w-8m-dTF" kind="relationship" relationship="viewControllers" id="jRQ-aM-vVq"/>
+                        <segue destination="o5K-Z2-fYa" kind="relationship" relationship="viewControllers" id="unw-am-c0w"/>
                         <segue destination="NhJ-Np-Ask" kind="relationship" relationship="viewControllers" id="QBl-Yp-W8W"/>
+                        <segue destination="30w-8m-dTF" kind="relationship" relationship="viewControllers" id="jRQ-aM-vVq"/>
                         <segue destination="x6w-Ub-6Pi" kind="relationship" relationship="viewControllers" id="Vba-kz-Aqc"/>
                     </connections>
                 </tabBarController>
@@ -141,14 +146,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Produtos -  Fundo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="2ip-lT-c2t">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="celulaReuso" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" rowHeight="100" id="9fh-cQ-wRZ">
-                                <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="celulaReuso" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" rowHeight="100" id="9fh-cQ-wRZ" customClass="FilmeCelula" customModule="easyshop_PI2017" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="158" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fh-cQ-wRZ" id="VOX-nu-PDn">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NAj-nt-sLf">
+                                            <rect key="frame" x="8" y="4" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QB6-Lg-vvB">
+                                            <rect key="frame" x="106" y="8" width="206" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crj-8C-5Tj">
+                                            <rect key="frame" x="106" y="39" width="206" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                            <color key="textColor" red="0.99910277128219604" green="0.14712172746658325" blue="0.0014433269388973713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="filmeImageView" destination="NAj-nt-sLf" id="g5j-oJ-gg2"/>
+                                    <outlet property="precoLabel" destination="crj-8C-5Tj" id="sPD-ci-FzD"/>
+                                    <outlet property="tituloLabel" destination="QB6-Lg-vvB" id="jiI-Ua-OKt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -156,28 +190,48 @@
                             <outlet property="delegate" destination="o5K-Z2-fYa" id="okg-dW-I2W"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Produtos" image="mercado_menu" id="rq6-sN-sbn"/>
+                    <tabBarItem key="tabBarItem" title="Produtos" image="mercado_menu" id="Eet-TB-mtw"/>
                     <navigationItem key="navigationItem" id="6Ct-Ht-TLW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TO6-dq-tQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3768.75" y="216.5492957746479"/>
+            <point key="canvasLocation" x="4192.5" y="235.56338028169014"/>
         </scene>
         <!--Carrinho-->
         <scene sceneID="4RC-Zd-xIs">
             <objects>
                 <viewController id="jHM-ny-fdK" customClass="ProdutosViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HCL-iM-q3o">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HCL-iM-q3o">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" id="gs3-Wd-BQa">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" rowHeight="100" id="gs3-Wd-BQa" customClass="FilmeCelula" customModule="easyshop_PI2017" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gs3-Wd-BQa" id="e3L-ko-LMF">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-3m-Zh8">
+                                            <rect key="frame" x="8" y="8" width="90" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-Hl-VoL">
+                                            <rect key="frame" x="106" y="8" width="206" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-td-eHj">
+                                            <rect key="frame" x="106" y="43" width="206" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -193,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7T6-J7-ayp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3015" y="931"/>
+            <point key="canvasLocation" x="3015" y="930.63380281690138"/>
         </scene>
         <!--Ofertas-->
         <scene sceneID="JtO-7K-BdC">

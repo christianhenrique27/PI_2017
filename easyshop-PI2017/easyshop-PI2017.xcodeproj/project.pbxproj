@@ -14,6 +14,7 @@
 		7F5A8E381F9A340D003447F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A8E371F9A340D003447F0 /* Assets.xcassets */; };
 		7F5A8E3B1F9A340D003447F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A8E391F9A340D003447F0 /* LaunchScreen.storyboard */; };
 		7F7CA0BE1FB2C22700CD5834 /* ProdutosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CA0BD1FB2C22700CD5834 /* ProdutosViewController.swift */; };
+		7F7CA0C01FB2D00B00CD5834 /* ArmazenamentoCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */; };
 		7F7D47061F9B00120079F2BC /* EntrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D47051F9B00120079F2BC /* EntrarViewController.swift */; };
 		7F7D47081F9B00400079F2BC /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D47071F9B00400079F2BC /* CadastrarViewController.swift */; };
 		7F83BA871F9BDCE800C46713 /* MaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83BA861F9BDCE800C46713 /* MaisViewController.swift */; };
@@ -33,6 +34,7 @@
 		7F5A8E3A1F9A340D003447F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F5A8E3C1F9A340D003447F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F7CA0BD1FB2C22700CD5834 /* ProdutosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutosViewController.swift; sourceTree = "<group>"; };
+		7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmazenamentoCelula.swift; sourceTree = "<group>"; };
 		7F7D47051F9B00120079F2BC /* EntrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrarViewController.swift; sourceTree = "<group>"; };
 		7F7D47071F9B00400079F2BC /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
 		7F83BA861F9BDCE800C46713 /* MaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaisViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				7F87726B1F9A5DC200B9BFEE /* GoogleService-Info.plist */,
 				7F5A8E391F9A340D003447F0 /* LaunchScreen.storyboard */,
 				7F5A8E3C1F9A340D003447F0 /* Info.plist */,
+				7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */,
 			);
 			path = "easyshop-PI2017";
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7CA0C01FB2D00B00CD5834 /* ArmazenamentoCelula.swift in Sources */,
 				7F7D47081F9B00400079F2BC /* CadastrarViewController.swift in Sources */,
 				7F83BA8B1F9BE62100C46713 /* OfertasViewController.swift in Sources */,
 				7F5A8E331F9A340D003447F0 /* ViewController.swift in Sources */,
