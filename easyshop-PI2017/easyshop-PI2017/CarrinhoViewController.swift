@@ -2,41 +2,58 @@
 //  CarrinhoViewController.swift
 //  easyshop-PI2017
 //
-//  Created by uillian on 21/10/2017.
+//  Created by uillian on 14/11/2017.
 //  Copyright © 2017 uillian. All rights reserved.
 //
 
+import Foundation
 import UIKit
-import FirebaseAuth
+import FirebaseDatabase
 
-class CarrinhoViewController: UIViewController {
-
-    //Esconder o teclado
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class CarrinhoViewController: UIViewController{
+    
+    @IBOutlet weak var produtoImagemView: UIImageView!
+    
+    @IBOutlet weak var produtoTituloView: UILabel!
+    
+    @IBOutlet weak var produtoPrecoView: UILabel!
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func finalizarCompra(_ sender: Any) {
+    
+       //Configurar bancos de dados;
+        
+        let database = Database.database().reference();
+        
+        let produtos = database.child("Produtos")
+        
+        let dadosUsuarios = [
+            
+            "Nome Produto" : self.produtoTituloView.text,
+            "Preco Produto": self.produtoPrecoView.text]
+                                                            as [String : Any]
+        
+        
+        //Salvar dados
+        
+        produtos.childByAutoId().setValue(dadosUsuarios)
+        
+        
+        
+        
     }
-    */
-
+    
+    var carrinho : Produ!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        produtoImagemView.image = carrinho.imagem
+        produtoTituloView.text =  carrinho.titulo
+        produtoPrecoView.text = carrinho.descricao
+        
+    
+    
+    
+}
 }

@@ -96,8 +96,7 @@ class CadastrarViewController: UIViewController {
                                                         let database = Database.database().reference();
                                                         
                                                         let usuarios = database.child("Usuários")
-                                                        
-                                                        
+                                                                                                                
                                                         
                                                         // salvar no banco de dados --> Database;
                                                         

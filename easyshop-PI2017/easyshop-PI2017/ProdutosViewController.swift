@@ -8,68 +8,121 @@
 
 import UIKit
 
-class ProdutosViewController: UITableViewController {
+class ProdutosViewController:UITableViewController {
     
-    var filmes: [Filme] = []
+    var mercadorias: [Produ] = []
     
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+        // LINHAS DA TABELAS DE PRODUTOS E SEUS VALORES RESPEQTIVOS
             
-            var filme : Filme
-        filme = Filme(titulo: "filme 1", descricao: "filme 1", imagem: #imageLiteral(resourceName: "produto1"))
-            filmes.append( filme )
+            var produto : Produ
+        produto = Produ(titulo: "Veja", descricao: "R$ 3,00", imagem: #imageLiteral(resourceName: "produto1"))
+            mercadorias.append( produto )
             
-        filme = Filme(titulo: "filme 2", descricao: "filme 2", imagem: #imageLiteral(resourceName: "produto2"))
-            filmes.append( filme )
+        produto = Produ(titulo: "Ajax", descricao: "R$ 4,99", imagem: #imageLiteral(resourceName: "produto2"))
+            mercadorias.append( produto )
             
-        filme = Filme(titulo: "filme 3", descricao: "filme 3", imagem: #imageLiteral(resourceName: "produto3"))
-            filmes.append( filme )
+        produto = Produ(titulo: "Feijão Carioca", descricao: "R$ 6,00", imagem: #imageLiteral(resourceName: "produto3"))
+            mercadorias.append( produto )
         
-        filme = Filme(titulo: "filme 4", descricao: "filme 4", imagem: #imageLiteral(resourceName: "produto4"))
-            filmes.append( filme )
+        produto = Produ(titulo: "Cookies", descricao: "R$ 3,40", imagem: #imageLiteral(resourceName: "produto4"))
+            mercadorias.append( produto )
         
+        produto = Produ(titulo: "Guaraná Zero", descricao: "R$ 3,60", imagem: #imageLiteral(resourceName: "produto5"))
+        mercadorias.append( produto )
         
         
             
     }
+    
+    // FUNÇÃO PARA INICIALIZAR A TABELA;
     
         override func numberOfSections(in: UITableView) -> Int{
             
             return 1
             
         }
-        
+    
+        // FUNÇÃO PARA CONTAR CADA LINHA DA TABELA
         
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return filmes.count
+            return mercadorias.count
         }
-        
+    
+    // FUNÇÃO PARA MONTAR A TABELA ;
+    
         override func tableView( _ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
-            let filme: Filme = filmes [indexPath.row]
+            let produtos: Produ = mercadorias[indexPath.row]
             let celulaReuso = "celulaReuso"
             
-            let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath) as! FilmeCelula
-            celula.filmeImageView.image = filme.imagem
-            celula.tituloLabel.text = filme.titulo
-            celula.precoLabel.text = filme.descricao
+            let celula = tableView.dequeueReusableCell(withIdentifier: celulaReuso, for: indexPath) as! produtoCelula
+            celula.produtoImageView.image = produtos.imagem
+            celula.tituloLabel.text = produtos.titulo
+            celula.precoLabel.text = produtos.descricao
             /* celula.textLabel?.text = filme.titulo
             celula.imageView?.image = filme.imagem */
             
             return celula
             
-        }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detalheCarrinho"{
+            
+            if let indexPath = tableView.indexPathForSelectedRow{
+                
+                let produtoSelecionado = self.mercadorias[ indexPath.row ]
+                let viewControllerDestino =  segue.destination as! CarrinhoViewController
+                
+                viewControllerDestino.carrinho = produtoSelecionado
+            
+            }
+            
+        }
+        
+    }
 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
+    
+    
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detalheCarrinho"{
+            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                
+                let produtoSelecionado = self.mercadorias [ indexPath.row ]
+                let viewControlerDestino = segue.destination as! ProdutosViewController
+                
+                viewControlerDestino.mercadorias = [produtoSelecionado]
+                
+            }
+            
+            
+        }
+    }*/
+
+
+    
+    
+    
     
 }

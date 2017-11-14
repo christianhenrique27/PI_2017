@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Filme{
+class Produ{
     
     var titulo: String!
     var descricao: String!

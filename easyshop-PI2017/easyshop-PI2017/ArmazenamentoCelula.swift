@@ -8,9 +8,10 @@
 
 import UIKit
 
-class FilmeCelula: UITableViewCell{
+class produtoCelula: UITableViewCell{
     
-    @IBOutlet weak var filmeImageView: UIImageView!
+    @IBOutlet weak var produtoImageView: UIImageView!
+    
     @IBOutlet weak var tituloLabel: UILabel!
     @IBOutlet weak var precoLabel: UILabel!
     

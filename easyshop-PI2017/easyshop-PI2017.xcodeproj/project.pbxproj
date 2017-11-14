@@ -18,9 +18,10 @@
 		7F7D47061F9B00120079F2BC /* EntrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D47051F9B00120079F2BC /* EntrarViewController.swift */; };
 		7F7D47081F9B00400079F2BC /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D47071F9B00400079F2BC /* CadastrarViewController.swift */; };
 		7F83BA871F9BDCE800C46713 /* MaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83BA861F9BDCE800C46713 /* MaisViewController.swift */; };
-		7F83BA891F9BE16C00C46713 /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83BA881F9BE16C00C46713 /* CarrinhoViewController.swift */; };
 		7F83BA8B1F9BE62100C46713 /* OfertasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F83BA8A1F9BE62100C46713 /* OfertasViewController.swift */; };
 		7F87726C1F9A5DEE00B9BFEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F87726B1F9A5DC200B9BFEE /* GoogleService-Info.plist */; };
+		7F8A8D421FBB357500857A02 /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A8D411FBB357500857A02 /* CarrinhoViewController.swift */; };
+		7F8A8D441FBB421E00857A02 /* SXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8A8D431FBB421E00857A02 /* SXViewController.swift */; };
 		7FD47D591FB222E300A20C8F /* Armazenamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD47D581FB222E300A20C8F /* Armazenamento.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +39,10 @@
 		7F7D47051F9B00120079F2BC /* EntrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrarViewController.swift; sourceTree = "<group>"; };
 		7F7D47071F9B00400079F2BC /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
 		7F83BA861F9BDCE800C46713 /* MaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaisViewController.swift; sourceTree = "<group>"; };
-		7F83BA881F9BE16C00C46713 /* CarrinhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
 		7F83BA8A1F9BE62100C46713 /* OfertasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertasViewController.swift; sourceTree = "<group>"; };
 		7F87726B1F9A5DC200B9BFEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F8A8D411FBB357500857A02 /* CarrinhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
+		7F8A8D431FBB421E00857A02 /* SXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXViewController.swift; sourceTree = "<group>"; };
 		7FD47D581FB222E300A20C8F /* Armazenamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armazenamento.swift; sourceTree = "<group>"; };
 		9A49260B921D7242E8E1B2B2 /* Pods-easyshop-PI2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyshop-PI2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-easyshop-PI2017/Pods-easyshop-PI2017.debug.xcconfig"; sourceTree = "<group>"; };
 		EC2D3EFCBFE3A4BB73971289 /* Pods_easyshop_PI2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_easyshop_PI2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,14 +96,15 @@
 				7F83BA861F9BDCE800C46713 /* MaisViewController.swift */,
 				7F7CA0BD1FB2C22700CD5834 /* ProdutosViewController.swift */,
 				7FD47D581FB222E300A20C8F /* Armazenamento.swift */,
-				7F83BA881F9BE16C00C46713 /* CarrinhoViewController.swift */,
+				7F8A8D411FBB357500857A02 /* CarrinhoViewController.swift */,
+				7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */,
 				7F83BA8A1F9BE62100C46713 /* OfertasViewController.swift */,
 				7F5A8E341F9A340D003447F0 /* Main.storyboard */,
 				7F5A8E371F9A340D003447F0 /* Assets.xcassets */,
 				7F87726B1F9A5DC200B9BFEE /* GoogleService-Info.plist */,
 				7F5A8E391F9A340D003447F0 /* LaunchScreen.storyboard */,
 				7F5A8E3C1F9A340D003447F0 /* Info.plist */,
-				7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */,
+				7F8A8D431FBB421E00857A02 /* SXViewController.swift */,
 			);
 			path = "easyshop-PI2017";
 			sourceTree = "<group>";
@@ -251,16 +254,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F8A8D421FBB357500857A02 /* CarrinhoViewController.swift in Sources */,
 				7F7CA0C01FB2D00B00CD5834 /* ArmazenamentoCelula.swift in Sources */,
 				7F7D47081F9B00400079F2BC /* CadastrarViewController.swift in Sources */,
 				7F83BA8B1F9BE62100C46713 /* OfertasViewController.swift in Sources */,
 				7F5A8E331F9A340D003447F0 /* ViewController.swift in Sources */,
+				7F8A8D441FBB421E00857A02 /* SXViewController.swift in Sources */,
 				7FD47D591FB222E300A20C8F /* Armazenamento.swift in Sources */,
 				7F83BA871F9BDCE800C46713 /* MaisViewController.swift in Sources */,
 				7F7CA0BE1FB2C22700CD5834 /* ProdutosViewController.swift in Sources */,
 				7F5A8E311F9A340D003447F0 /* AppDelegate.swift in Sources */,
 				7F7D47061F9B00120079F2BC /* EntrarViewController.swift in Sources */,
-				7F83BA891F9BE16C00C46713 /* CarrinhoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,13 +405,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9N22F54ZWZ;
 				INFOPLIST_FILE = "easyshop-PI2017/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unipam.easyshop-PI2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easyshop-PI2017/easyshop-PI2017-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,12 +424,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9N22F54ZWZ;
 				INFOPLIST_FILE = "easyshop-PI2017/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "unipam.easyshop-PI2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "easyshop-PI2017/easyshop-PI2017-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
