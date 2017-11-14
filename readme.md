@@ -7,7 +7,7 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 #### Metas a se bater
 
-* Criar um sistema de carrinho onde o usuário podera avaliar o preço da sua compra e os produtos já selecionados, podendo tanto adicionar
+* Criar um sistema de carrinho onde o usuário poderá avaliar o preço da sua compra e os produtos já selecionados, podendo tanto adicionar
 
  quanto remover produtos do carrinho, tendo listas já pré-definidas.
 * Uma aba de promoções de produtos do supermercado.
@@ -16,7 +16,7 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 * Os produtos no app devem ter etiquetas especificando o seu preço e demais características.
 
-* A compra que for feita pelo nosso app vai ter opção de emtrega com possiveis taxas de cobrança pelo serviço ou o consumidor pode opitar por ele mesmo buscar sua compra no supermercado.
+* A compra que for feita pelo nosso app vai ter opção de entrega com possíveis taxas de cobrança pelo serviço ou o consumidor pode optar por ele mesmo buscar sua compra no supermercado.
 
 * Criar layout responsivo.     
 
@@ -31,17 +31,17 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 ##### Parte sistema web
 
-* Area de login
-* Area de recebimento de produtos 
+* Área de login
+* Área de recebimento de produtos 
 
-#### Aplicativo Android
+#### Aplicativo IOS
 
 * Validar os campos de entrada para cadastro e login.
-* Permição de se cadastrar e logar em nosso app.
+* Permissão de se cadastrar e logar em nosso app.
 * Salvando dados pessoais no Firebase.
 
 
-#### Aplicativo Iphone
+#### Aplicativo IOS
 
 * Validar os campos de entrada para cadastro e login.
 * Criação de usuarios para o app;
@@ -50,18 +50,18 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 #### Novembro
 
-##### Parte sistema web
+##### Parte sistema Web
 
-* Area de graficos (lucro , estoque, etc)
-* Area de ofertas 
-* Area de clientes cadastrados
-* Desing gráfico completo
+* Área de gráficos (lucro , estoque, etc)
+* Área de ofertas 
+* Área de clientes cadastrados
+* Design gráfico completo
 
-#### Parte Andorid e Iphone
+#### Parte Android e IOS
 
-* Liatar produtos e possibilitar fazer compras no app pela área de produtos
-* Listaros produtos comprados na área do carrinho
-* Jogar para o FireBase as comprasdos usuários
+* Listar produtos e possibilitar fazer compras no app pela área de produtos
+* Listar os produtos comprados na área do carrinho.
+* Jogar para o FireBase as compras dos usuários
 
 #### Ferramentas Utilizadas
 
