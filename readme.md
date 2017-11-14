@@ -57,6 +57,11 @@ acabando com e necessidade de você sair do conforto de seu lar.
 * Area de clientes cadastrados
 * Desing gráfico completo
 
+#### Parte Andorid e Iphone
+
+* Liatar produtos e possibilitar fazer compras no app pela área de produtos
+* Listaros produtos comprados na área do carrinho
+* Jogar para o FireBase as comprasdos usuários
 
 #### Ferramentas Utilizadas
 
