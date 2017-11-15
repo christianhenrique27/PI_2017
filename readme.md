@@ -1,15 +1,15 @@
-﻿# Aplicativo Mobile (Android) supermecado.
+﻿# Aplicativo Mobile (Android e IOS) EASYSHOP.
 
 ### Objetivo Principal
 
 Criar um app que integre os mercados locais ao consumidor pela a compra de produtos pelo nosso app, 
 acabando com e necessidade de você sair do conforto de seu lar.
 
-#### Metas a se bater
+#### Metas à serem compridas
 
 * Criar um sistema de carrinho onde o usuário poderá avaliar o preço da sua compra e os produtos já selecionados, podendo tanto adicionar
 
- quanto remover produtos do carrinho, tendo listas já pré-definidas.
+ Quando remover produtos do carrinho, tendo listas já pré-definidas.
 * Uma aba de promoções de produtos do supermercado.
 
 * Criar um sistema web para gerenciamento de estoque e cadastro de produtos. 
@@ -59,11 +59,11 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 #### Parte Android e IOS
 
-* Listar produtos e possibilitar fazer compras no app pela área de produtos
+* Listar produtos e possibilitar fazer compras no app pela área de produtos.
 * Listar os produtos comprados na área do carrinho.
-* Jogar para o FireBase as compras dos usuários
+* Jogar para o FireBase as compras dos usuários.
 
-#### Ferramentas Utilizadas
+#### Ferramentas Utilizadas para a crição do app
 
 * FireBase
 * XCODE
