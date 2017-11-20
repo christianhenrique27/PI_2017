@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import FirebaseDatabase
-import FirebaseAuth
 
 class CarrinhoViewController: UIViewController{
     
@@ -21,18 +20,6 @@ class CarrinhoViewController: UIViewController{
     
 
     @IBAction func finalizarCompra(_ sender: Any) {
-        
-        
-       // msg de alerta assim que o cliente finaliza a compra
-        
-        let alerta = UIAlertController(title: "Dados enviados com Sucesso", message: "Seus pedidos foram enviados para o banco de dados com Sucesso..", preferredStyle: .alert)
-        
-        let confirmarAlerta = UIAlertAction(title: "Confirmar", style: .default) { (acao) in
-            print("Botão Confirmar Precionado!")
-        }
-        
-        alerta.addAction(confirmarAlerta)
-        present(alerta, animated: true, completion: nil)
     
        //Configurar bancos de dados;
         
@@ -40,20 +27,17 @@ class CarrinhoViewController: UIViewController{
         
         let produtos = database.child("Produtos")
         
-        let nomeProduto = self.produtoTituloView.text!
-        let precoProduto = self.produtoPrecoView.text!
-        
         let dadosUsuarios = [
             
-            "Nome Produto" : nomeProduto,
-            "Preco Produto": precoProduto]
+            "Nome Produto" : self.produtoTituloView.text,
+            "Preco Produto": self.produtoPrecoView.text]
                                                             as [String : Any]
-        
         
         
         //Salvar dados
         
         produtos.childByAutoId().setValue(dadosUsuarios)
+        
         
         
         

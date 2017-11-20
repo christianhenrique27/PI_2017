@@ -133,7 +133,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="o5K-Z2-fYa" kind="relationship" relationship="viewControllers" id="GB4-Q6-MLT"/>
-                        <segue destination="6PA-5M-t6p" kind="relationship" relationship="viewControllers" id="U2K-6I-VZr"/>
+                        <segue destination="clT-ae-vjL" kind="relationship" relationship="viewControllers" id="zwF-X8-c6I"/>
                         <segue destination="aeG-xW-fIW" kind="relationship" relationship="viewControllers" id="Vba-kz-Aqc"/>
                     </connections>
                 </tabBarController>
@@ -161,7 +161,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NAj-nt-sLf">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NAj-nt-sLf">
                                             <rect key="frame" x="8" y="4" width="90" height="90"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="90" id="lhh-FL-dG7"/>
@@ -258,7 +258,7 @@
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="mn2-pH-1Mn"/>
                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="Wnw-RE-fTe">
                             <connections>
-                                <segue destination="qe0-QI-YOA" kind="show" identifier="voltarMenu" id="WRm-LQ-xfn"/>
+                                <segue destination="qe0-QI-YOA" kind="show" id="WRm-LQ-xfn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -270,7 +270,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYb-0n-Nbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5914" y="1012"/>
+            <point key="canvasLocation" x="5360.625" y="965.49295774647885"/>
+        </scene>
+        <!--Ofertas-->
+        <scene sceneID="JtO-7K-BdC">
+            <objects>
+                <viewController id="NhJ-Np-Ask" customClass="OfertasViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNg-rq-Cff">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ofertas -  Fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ei7-uw-cvn">
+                                <rect key="frame" x="0.0" y="30" width="320" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aBR-xG-tfH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ofertas" image="oferta_menu" id="0uQ-Oq-Pvt"/>
+                    <navigationItem key="navigationItem" title="Ofertas" id="cGo-FN-aVU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yze-F1-gQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4931" y="1717"/>
         </scene>
         <!--Mais-->
         <scene sceneID="7JN-0x-LAC">
@@ -528,6 +551,25 @@
             </objects>
             <point key="canvasLocation" x="2034.375" y="153.16901408450704"/>
         </scene>
+        <!--Ofertas-->
+        <scene sceneID="Vmt-Iw-a4B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clT-ae-vjL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ofertas" image="oferta_menu" id="3ju-jt-7vM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z94-A8-KgB">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NhJ-Np-Ask" kind="relationship" relationship="rootViewController" id="VWU-Ho-R8e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjS-MD-REU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4103" y="1717"/>
+        </scene>
         <!--Produtos-->
         <scene sceneID="C6i-Wt-J9t">
             <objects>
@@ -690,73 +732,6 @@
             </objects>
             <point key="canvasLocation" x="4104" y="2475"/>
         </scene>
-        <!--Ofertas-->
-        <scene sceneID="jik-Vh-Fml">
-            <objects>
-                <tableViewController id="6PA-5M-t6p" customClass="OfertasTableViewController" customModule="easyshop_PI2017" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="78j-Mc-DPR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ofertas -  Fundo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="IhM-5z-gDe">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="celulaReuso" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" rowHeight="100" id="fgx-4J-7mI" customClass="produtoCelula" customModule="easyshop_PI2017" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="158" width="320" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fgx-4J-7mI" id="Yd2-bS-c3r">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="paB-0T-mh7">
-                                            <rect key="frame" x="8" y="4" width="90" height="90"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="90" id="FeT-yt-ytk"/>
-                                                <constraint firstAttribute="height" constant="90" id="adF-2E-ztz"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mW7-fQ-JA5">
-                                            <rect key="frame" x="106" y="8" width="206" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-fE-fDb">
-                                            <rect key="frame" x="106" y="35" width="206" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
-                                            <color key="textColor" red="0.99910277130000003" green="0.14712172749999999" blue="0.0014433269389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="paB-0T-mh7" firstAttribute="leading" secondItem="Yd2-bS-c3r" secondAttribute="leading" constant="8" id="GIT-HW-9eu"/>
-                                        <constraint firstItem="paB-0T-mh7" firstAttribute="centerY" secondItem="Yd2-bS-c3r" secondAttribute="centerY" id="vdP-O6-al8"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="precoLabel" destination="DeI-fE-fDb" id="cgS-WR-tGF"/>
-                                    <outlet property="produtoImageView" destination="paB-0T-mh7" id="w6L-Ac-5I6"/>
-                                    <outlet property="tituloLabel" destination="mW7-fQ-JA5" id="h5k-R3-bG9"/>
-                                    <segue destination="0mb-wf-Q8J" kind="show" identifier="detalheCarrinho" id="pv2-Wd-k1N"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="6PA-5M-t6p" id="z3X-rT-MHO"/>
-                            <outlet property="delegate" destination="6PA-5M-t6p" id="r8r-hi-Fp4"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Ofertas" image="oferta_menu" id="v3q-Un-nBh"/>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="w5i-IR-fvq"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6ar-jz-fP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4928" y="1767"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Login -  Fundo" width="676" height="338"/>
@@ -772,7 +747,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Mqc-3d-Hfx"/>
         <segue reference="154-uz-4qy"/>
-        <segue reference="F8w-ds-ff8"/>
         <segue reference="WRm-LQ-xfn"/>
     </inferredMetricsTieBreakers>
 </document>
