@@ -7,11 +7,6 @@ a:hover{
 	padding: 15px 0px;
 	border-bottom: #c20808  solid 1px;
 }
-
-.navbar-brand > img{
-	width: 120px;
-}
-
 .nav > li > a{
 	color: #ffffff;
 	font-weight: bold;
@@ -21,10 +16,12 @@ a:hover{
 .nav > li > a:hover, .nav > li > a:focus{
 	background-color: #ad2626 ;
 	color: #ffffff;
+	
 }
 
 .navbar-brand{
 	padding: 0px;
+
 }
 
 .icon-bar{
@@ -34,52 +31,10 @@ a:hover{
 .navbar-toggle{
 	border-color: #ffffff;
 }
-
-.carousel{
-	margin-top: 80px;
-}
-
-.lancamentos{
-	margin-top: 20px;
-
-}
-
-.lancamentos > img{
-	text-align: center;
-	width: 50%;
-	margin: auto;
-	display: block;
-	/*position: relative;
-	left: 30%;*/
-	border-radius: 50%;
-}
-
-.lancamentos > h2{
-	text-align: center;
-	color: #2c7873;
-}
-
-.lancamentos > p{
-	text-align: justify;
-}
-
-.justificado{
-	text-align: justify;
-}
-
-video{
-	width: 100%;
-	height: auto;
-}
-
-.trailler{
-	margin: auto;
-	display: block;
-}
-
 footer{
 	background-color: #c20808;
 	min-height: 200px;
+	width: 100%;
 }
 
 .contato{
@@ -106,6 +61,7 @@ footer{
 	color: #082725;
 }
 
+
 .social > ul > li > a:hover{
 	color:#2C3E50 ;
 }
@@ -128,8 +84,6 @@ footer{
 .mais > ul > li > a:hover{
 	color:#082725 ;
 }
-
-
 .copyright{
 	background: #b30404;
 	color: #ffffff;
@@ -139,6 +93,7 @@ footer{
 	width: 100%;
 }
 .cadastro > h1{
+	color:white;
 	margin-bottom: 10px;
 	text-align: center;
 	font-family: "San_Francisco";
@@ -146,4 +101,62 @@ footer{
 .cadastro{
 	margin-top: 100px;
 	margin-bottom: 100px;
+	color:white;
+}
+label{
+	margin-left: 200px;
+	color:white;
+}
+@media all and (max-width: 600px){
+
+#imagem{
+	width: 100%;
+}
+}
+.formulario input[type="checkbox"]{ float: none;  margin:0px 0px 0 0;}
+
+#checkbox > input {
+	display:block;
+	margin-left: 28%;
+	
+	top:28.4px;
+}
+#checkbox > label{
+	margin-left: 29%;
+}
+#font{
+	font-family: "San_Francisco";
+}
+.navbar-header > a > img{
+	width: 15%;
+	margin-top: -2.5%;
+}
+.center{
+	display: block;
+	margin: auto;
+}
+#fundo1{
+	background: url(../img/fundo2.jpg) fixed;
+	height: 100%;
+	width: 100%;
+}
+.col-md-12{
+	padding: 20px, 20px, 20px, 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+#fundo{
+	background: url(../img/fundo2.jpg) fixed;
+	width: 100%;
+}
+#fundo2{
+	background: url(../img/fundo2.jpg) fixed;
+	width: 100%;
+}
+.position-login{
+	margin-bottom: 600px;
+	margin-top: 200px;
+}
+.position-login > input{
+	margin:auto;
+	display: block;
 }
