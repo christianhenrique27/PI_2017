@@ -40,8 +40,74 @@ class ProdutosViewController:UITableViewController {
         produto = Produ(titulo: "Guaraná Zero", descricao: "R$ 3,60", imagem: #imageLiteral(resourceName: "produto5"))
         mercadorias.append( produto )
         
+        produto = Produ(titulo: "Açucar Refinado União", descricao: "R$ 2,70", imagem: #imageLiteral(resourceName: "acucar refinado"))
+        mercadorias.append( produto )
         
-            
+        produto = Produ(titulo: "Bolacha (Água e Sal)", descricao: "R$ 4,60", imagem: #imageLiteral(resourceName: "Agua e sal"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Arroz", descricao: "R$ 12,20", imagem: #imageLiteral(resourceName: "arroz"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Ruffles 280g", descricao: "R$ 8,20", imagem: #imageLiteral(resourceName: "batata"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Bombril", descricao: "R$ 1,73", imagem: #imageLiteral(resourceName: "bombril"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Café", descricao: "R$ 5,55", imagem: #imageLiteral(resourceName: "café"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Cerveja Brahma", descricao: "R$ 2,80", imagem: #imageLiteral(resourceName: "cerveja Brahma"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Cerveja Skol", descricao: "R$ 2,64", imagem: #imageLiteral(resourceName: "cerveja skol"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Coca Cola 2L", descricao: "R$ 5,90", imagem: #imageLiteral(resourceName: "coca 2L"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Pinho Sol", descricao: "R$ 8,80", imagem: #imageLiteral(resourceName: "desinfetante"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Bombom Garoto", descricao: "R$ 8,10", imagem: #imageLiteral(resourceName: "garoto"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Iorgute", descricao: "R$ 2,60", imagem: #imageLiteral(resourceName: "iorgute"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Leite Cemil", descricao: "R$ 2,10", imagem: #imageLiteral(resourceName: "leite cemil"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Leite Condensado", descricao: "R$ 3,50", imagem: #imageLiteral(resourceName: "leite condensado"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Óleo de Soja", descricao: "R$ 3,70", imagem: #imageLiteral(resourceName: "oleo soja"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Papel Higiênico", descricao: "R$ 2,40", imagem: #imageLiteral(resourceName: "papel higienico"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Sabão OMO 400g", descricao: "R$ 7,60", imagem: #imageLiteral(resourceName: "sabao omo"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Shampoo", descricao: "R$ 6,20", imagem: #imageLiteral(resourceName: "shampoo"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Suco Del Valle", descricao: "R$ 4,60", imagem: #imageLiteral(resourceName: "suco del valle"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Suco Tang", descricao: "R$ 0,89", imagem: #imageLiteral(resourceName: "suco tang"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Toddy", descricao: "R$ 8,30", imagem: #imageLiteral(resourceName: "toddy"))
+        mercadorias.append( produto )
+        
+        produto = Produ(titulo: "Vinagre", descricao: "R$ 3,20", imagem: #imageLiteral(resourceName: "vinagre"))
+        mercadorias.append( produto )
+        
+        
+      
     }
     
     // FUNÇÃO PARA INICIALIZAR A TABELA;
