@@ -164,9 +164,9 @@ class ProdutoNaoLogadoTableViewController: UITableViewController {
    
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let alerta = UIAlertController(title: "Alerta", message: "Você precisa criar ou estar logado para poder realizar suas compras", preferredStyle: .alert)
+        let alerta = UIAlertController(title: "Alerta", message: "Você precisa estar logado para realizar suas compras", preferredStyle: .alert)
         
-        let confirmarAlerta = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let confirmarAlerta = UIAlertAction(title: "Confirmar", style: .default, handler: nil)
         
         alerta.addAction(confirmarAlerta)
         

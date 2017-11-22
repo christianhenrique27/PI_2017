@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AB57E786C7AE725C2A4E14B /* Pods_easyshop_PI2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2D3EFCBFE3A4BB73971289 /* Pods_easyshop_PI2017.framework */; };
+		7F3BC6681FC524A90047D82F /* OfertaNaoLogadoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3BC6671FC524A90047D82F /* OfertaNaoLogadoTableViewController.swift */; };
 		7F5A8E311F9A340D003447F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A8E301F9A340D003447F0 /* AppDelegate.swift */; };
 		7F5A8E331F9A340D003447F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A8E321F9A340D003447F0 /* ViewController.swift */; };
 		7F5A8E361F9A340D003447F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A8E341F9A340D003447F0 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		2822F3D267544751968B5514 /* Pods-easyshop-PI2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-easyshop-PI2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-easyshop-PI2017/Pods-easyshop-PI2017.release.xcconfig"; sourceTree = "<group>"; };
+		7F3BC6671FC524A90047D82F /* OfertaNaoLogadoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaNaoLogadoTableViewController.swift; sourceTree = "<group>"; };
 		7F5A8E2D1F9A340D003447F0 /* easyshop-PI2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "easyshop-PI2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5A8E301F9A340D003447F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F5A8E321F9A340D003447F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				7F5A8E391F9A340D003447F0 /* LaunchScreen.storyboard */,
 				7F5A8E3C1F9A340D003447F0 /* Info.plist */,
 				7FDDE6E81FC22244001DD695 /* OfertasTableViewController.swift */,
+				7F3BC6671FC524A90047D82F /* OfertaNaoLogadoTableViewController.swift */,
 			);
 			path = "easyshop-PI2017";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				7F7CA0BE1FB2C22700CD5834 /* ProdutosViewController.swift in Sources */,
 				7F5A8E311F9A340D003447F0 /* AppDelegate.swift in Sources */,
 				7F7D47061F9B00120079F2BC /* EntrarViewController.swift in Sources */,
+				7F3BC6681FC524A90047D82F /* OfertaNaoLogadoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
