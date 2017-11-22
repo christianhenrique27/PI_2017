@@ -13,6 +13,7 @@
 		7F5A8E361F9A340D003447F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A8E341F9A340D003447F0 /* Main.storyboard */; };
 		7F5A8E381F9A340D003447F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A8E371F9A340D003447F0 /* Assets.xcassets */; };
 		7F5A8E3B1F9A340D003447F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A8E391F9A340D003447F0 /* LaunchScreen.storyboard */; };
+		7F6C1DF11FC4994E0074D13F /* ProdutoNaoLogadoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C1DF01FC4994E0074D13F /* ProdutoNaoLogadoTableViewController.swift */; };
 		7F7CA0BE1FB2C22700CD5834 /* ProdutosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CA0BD1FB2C22700CD5834 /* ProdutosViewController.swift */; };
 		7F7CA0C01FB2D00B00CD5834 /* ArmazenamentoCelula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */; };
 		7F7D47061F9B00120079F2BC /* EntrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7D47051F9B00120079F2BC /* EntrarViewController.swift */; };
@@ -33,6 +34,7 @@
 		7F5A8E371F9A340D003447F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5A8E3A1F9A340D003447F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F5A8E3C1F9A340D003447F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F6C1DF01FC4994E0074D13F /* ProdutoNaoLogadoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutoNaoLogadoTableViewController.swift; sourceTree = "<group>"; };
 		7F7CA0BD1FB2C22700CD5834 /* ProdutosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdutosViewController.swift; sourceTree = "<group>"; };
 		7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmazenamentoCelula.swift; sourceTree = "<group>"; };
 		7F7D47051F9B00120079F2BC /* EntrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrarViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				7F7CA0BD1FB2C22700CD5834 /* ProdutosViewController.swift */,
 				7FD47D581FB222E300A20C8F /* Armazenamento.swift */,
 				7F8A8D411FBB357500857A02 /* CarrinhoViewController.swift */,
+				7F6C1DF01FC4994E0074D13F /* ProdutoNaoLogadoTableViewController.swift */,
 				7F7CA0BF1FB2D00B00CD5834 /* ArmazenamentoCelula.swift */,
 				7F5A8E341F9A340D003447F0 /* Main.storyboard */,
 				7F5A8E371F9A340D003447F0 /* Assets.xcassets */,
@@ -254,6 +257,7 @@
 				7F8A8D421FBB357500857A02 /* CarrinhoViewController.swift in Sources */,
 				7F7CA0C01FB2D00B00CD5834 /* ArmazenamentoCelula.swift in Sources */,
 				7FDDE6E91FC22244001DD695 /* OfertasTableViewController.swift in Sources */,
+				7F6C1DF11FC4994E0074D13F /* ProdutoNaoLogadoTableViewController.swift in Sources */,
 				7F7D47081F9B00400079F2BC /* CadastrarViewController.swift in Sources */,
 				7F5A8E331F9A340D003447F0 /* ViewController.swift in Sources */,
 				7FD47D591FB222E300A20C8F /* Armazenamento.swift in Sources */,
