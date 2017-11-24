@@ -1,0 +1,187 @@
+a:hover{
+	text-decoration: none;
+}
+
+.navbar{
+	background: #c20808;
+	padding: 15px 0px;
+	border-bottom: #c20808  solid 1px;
+}
+.nav > li > a{
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 3px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+	background-color: #ad2626 ;
+	color: #ffffff;
+	
+}
+
+.navbar-brand{
+	padding: 0px;
+
+}
+
+.icon-bar{
+	background: #ffffff;
+}
+
+.navbar-toggle{
+	border-color: #ffffff;
+}
+footer{
+	background-color: #c20808;
+	min-height: 200px;
+	width: 100%;
+}
+
+.contato{
+	color: #ffffff;
+}
+
+.social > h3{
+	text-align: center;
+	color: #ffffff;
+}
+
+.social > ul{
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+}
+
+.social > ul > li{
+	display: inline;
+
+}
+
+.social > ul > li > a{
+	color: #ffffff;
+}
+
+
+.social > ul > li > a:hover{
+	color:#000000 ;
+}
+
+.mais > h3{
+	color: #ffffff;
+	text-align: center;
+}
+
+.mais > ul{
+	list-style: none;
+	padding: 0px;
+	text-align: center;
+}
+
+.mais > ul > li > a{
+	color: #ffffff;
+}
+
+.mais > ul > li > a:hover{
+	color:#082725 ;
+}
+.copyright{
+	background: #b30404;
+	color: #ffffff;
+	padding: 10px 0px;
+	text-align: center;
+	text-shadow: 2px 2px #000000;
+	width: 100%;
+}
+.cadastro > h1{
+	color:white;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: "San_Francisco";
+}
+.cadastro{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	color:white;
+}
+label{
+	margin-left: 200px;
+	color:white;
+}
+@media all and (max-width: 600px){
+
+#imagem{
+	width: 100%;
+}
+}
+.formulario input[type="checkbox"]{ float: none;  margin:0px 0px 0 0;}
+
+#checkbox > input {
+	display:block;
+	margin-left: 28%;
+	
+	top:28.4px;
+}
+#checkbox > label{
+	margin-left: 29%;
+}
+#font{
+	font-family: "San_Francisco";
+}
+.navbar-header > a > img{
+	width: 15%;
+	margin-top: -2.5%;
+}
+.center{
+	display: block;
+	margin: auto;
+}
+#fundo1{
+	background: url(../img/fundo2.jpg) fixed;
+	height: 100%;
+	width: 100%;
+}
+.col-md-12{
+	padding: 20px, 20px, 20px, 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+#fundo{
+	background: url(../img/fundo2.jpg) fixed;
+	width: 100%;
+}
+#fundo2{
+	background: url(../img/fundo2.jpg) fixed;
+	width: 100%;
+}
+.position-login{
+	margin-bottom: 600px;
+	margin-top: 200px;
+}
+.position-login > input{
+	margin:auto;
+	display: block;
+}
+input {
+	color: black;
+}
+button {
+	color: black;
+}
+
+.cadastro>img{
+
+	width: 500px;
+	height: 350px;
+	display: block;
+	margin: auto;
+}
+
+
+h3{
+
+		margin-top: 50px;
+		text-align: center;
+		font-family: "San_Francisco";
+		font-size:2em;
+
+}
+

@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+
+        <meta charset="utf-8">
+        
+        <title>Easy Shop - Cadastro de Produtos</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        
+        <script src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+        <script src="js/script.js"></script>
+       
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCr2albSTxNiaqDLmpIKbAobnydpOqY0Dc",
+            authDomain: "easyshop-ac8dc.firebaseapp.com",
+            databaseURL: "https://easyshop-ac8dc.firebaseio.com",
+            projectId: "easyshop-ac8dc",
+            storageBucket: "easyshop-ac8dc.appspot.com",
+            messagingSenderId: "905287213957"
+          };
+
+          firebase.initializeApp(config);
+
+          var database = firebase.database();
+
+          var uid = null;
+
+          firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+        uid = user.uid;
+        console.log(uid);
+  } else {
+    // No user is signed in.
+    alert("Nenhum usuario logado.");
+    location.href="index.html";
+    //Faz alguma ação..
+  }
+});
+
+          let x;
+
+          function salvar(uid1, prodname, preco, data1, data, tipo, quantidade, clas, imagem, ofertas) {
+            firebase.database().ref('Produtos/' + uid1 + "/produto"+x).set(
+            {
+            username: uid1,
+            produto: prodname,
+            valor : preco,
+            Data de fabricação: data1,
+            Data de vencimento: data,
+            Tipo: tipo,
+            Quantidade: quantidade,
+            Classificação: clas,
+            Imagem: imagem,
+            Ofertas: oferta,
+            }).then(()=>{alert("Produtos cadastrados com sucesso"); 
+
+
+                firebase.database().ref('produtos/' + uid1 + "/qntd").set(
+            {
+                qntd : x+1
+            });
+
+
+        }).catch(()=>{alert("Erro!");});
+        }
+
+
+            var uid1;
+            var prodname = getElementById("prodname");
+            var preco = getElementById("preco");
+            var datepicker1 = getElementById("data1");
+            var data = getElementById("data");
+            var tipo = getElementById("tipo");
+            var quantidade = getElementById("quantidade");
+            var clas = getElementById("clas");           
+            var ofertas = getElementById("ofertas");
+
+            firebase.database().ref('produtos/' + uid1 + '/qntd').once("value", function(qntd){
+                console.log(qntd.val().qntd);
+                x = qntd.val().qntd;
+                salvar(uid1, prodname, preco, data1, data, tipo, quantidade, clas, imagem, ofertas);
+            }
+            );                
+
+        </script>
+
+   </head>
+   
+   
+<body id="fundo1"> 
+
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Área de login</a></li>
+                    <li><a href="prod.html">Cadastro de Produtos</a></li>
+                    <li><a href="estatisticas.html">Estatísticas</a></li>
+                    <li><a href="index.html" onclick="sair()">Sair</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+
+                <div class="cadastro">
+
+                <h1>Cadastro de Produtos</h1>  
+                	<section>
+                         
+                    	 <div class="formulario">  
+
+                            <form action="" method="post" id="validate">                  
+                                    
+                                <label> Nome do Produto:</label>
+                                <input name="nomeprod" type="text" id="prodname">
+
+                                <label>Valor:</label>
+                                <input name="preco" type="text" class="p" id="preco">
+
+                                <label>Data de fabricação:</label>
+                                <input name="data" type="text" class="p" id="data1">
+
+                                <label>Data de validade:</label>
+                                <input name="data2" type="text" class="p" id="data">
+
+                                <label>Tipo:</label>
+                                <select name="perecivel" id="tipo">
+                                  <option>Selecione</option>
+                                  <option>Perecível</option>
+                                  <option>Não Perecível</option>
+                                </select>
+
+                                <label>Quantidade:</label>
+                                <input name="quantidade" type="text" class="p" id="quantidade">
+
+                                <label>Classificação do produto:</label>
+                                <input name="classificacao" type="text" id="clas">
+
+                                <div>
+                                    <label>Imagem:</label>
+                                    <td><input type="file" name="foto_produto" size="50" id="imagem"></td>
+                                </div>
+
+                                <div id="checkbox">
+                                    <input type="checkbox" id="ofertas" name="ofertas" value="ofertas">
+                                    <label id="ofertas1" for="ofertas1">Enviar produto para aba de ofertas?</label>
+                                </div>
+
+                                <input type="submit" value="Enviar" onclick="salvar()">
+
+
+                            </form>
+                    	</div><!--/formulario-->           
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer>
+        
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="contato">
+                        <h3>Contato</h3>
+                        <p>Rua Major Gote, 1000</p>
+                        <p>Centro, Patos de Minas - MG</p>
+                        <p>(34) 9999-9999</p>
+                        <p>cinema@cinema.com</p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="social">
+
+                        <h3>Redes Sociais</h3>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-google-plus fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa-stack fa-2x">
+                                        <i class="fa fa-square-o fa-stack-2x"></i>
+                                        <i class="fa fa-instagram fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="mais">
+                        <h3>EasyShop</h3></br>
+                        <ul>
+                            <li><a href="index.html">Área de login</a></li>
+                            <li><a href="prod.html">Cadastro de Produtos</a></li>
+                            <li><a href="estatisticas.html">Estatísticas</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <div class="copyright">
+        Copyright © Your Website 2017
+    </div>
+
+        <script type="text/javascript">
+
+            function sair(){
+                firebase.auth().signOut().then(function() {
+                    alert();
+            // Sign-out successful.
+            }).catch(function(error) {
+            // An error happened.
+            });
+            }
+        </script>
+
+</body>
+</html>
+
+
+    
