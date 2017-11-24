@@ -25,7 +25,7 @@ class CarrinhoViewController: UIViewController{
         
        // msg de alerta assim que o cliente finaliza a compra
         
-        let alerta = UIAlertController(title: "Dados enviados com Sucesso", message: "Seus pedidos foram enviados para o banco de dados com Sucesso..", preferredStyle: .alert)
+        let alerta = UIAlertController(title: "Dados enviados com Sucesso", message: "Compra finalizada com sucesso.", preferredStyle: .alert)
         
         let confirmarAlerta = UIAlertAction(title: "Confirmar", style: .default) { (acao) in
             print("Botão Confirmar Precionado!")

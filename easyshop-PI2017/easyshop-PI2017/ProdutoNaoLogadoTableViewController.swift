@@ -46,7 +46,7 @@ class ProdutoNaoLogadoTableViewController: UITableViewController {
         produto = Produ(titulo: "Bolacha (Água e Sal)", descricao: "R$ 4,60", imagem: #imageLiteral(resourceName: "Agua e sal"))
         mercadorias.append( produto )
         
-        produto = Produ(titulo: "Arroz", descricao: "R$ 12,20", imagem: #imageLiteral(resourceName: "arroz"))
+        produto = Produ(titulo: "Arroz Integral 5Kg - Vasconcelos", descricao: "R$ 12,20", imagem: #imageLiteral(resourceName: "arroz"))
         mercadorias.append( produto )
         
         produto = Produ(titulo: "Ruffles 280g", descricao: "R$ 8,20", imagem: #imageLiteral(resourceName: "batata"))
