@@ -52,10 +52,13 @@ acabando com e necessidade de você sair do conforto de seu lar.
 
 ##### Parte sistema Web
 
-* Área de gráficos (lucro , estoque, etc)
+* Área de gráficos (lucro , estoque, rendimento etc)
 * Área de ofertas 
 * Área de clientes cadastrados
 * Design gráfico completo
+* Área de estatísticas contendo gráficos ilustrativos sobre as vendas mensais do supermercado.
+* Implementando Firebase 
+* Área de cadastrar produtos via Web.
 
 #### Parte Android e IOS
 
