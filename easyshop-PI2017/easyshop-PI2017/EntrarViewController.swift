@@ -45,7 +45,7 @@ class EntrarViewController: UIViewController {
                     }else{
                         
                         // mesagem de verificação do usuario do login;
-                        self.exibirMensagem(titulo: "Dados inválido", mensagem: "Favor verificar os dados digitatos e tente novamente!");
+                        self.exibirMensagem(titulo: "Dados inválido", mensagem: "Favor verificar os dados digitados e tente novamente!");
                         
                     }
                     

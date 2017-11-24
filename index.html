@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+
+		<meta charset="utf-8">
+		
+		<title>Easy Shop - Login</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+		<link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+		<script src="js/script.js"></script>
+		
+
+		<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+   </head>
+   
+   
+<body id="fundo"> 
+
+	<nav class="navbar navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12">
+
+					<div class="cadastro">
+
+						<form name="login">
+									
+										<center class="position-login">
+											<h1 id="font">Iniciar Sessão</h1><br>
+											<table border="0" bordercolor="#008080" cellpadding="3" cellspacing="0" width="225">
+												<tbody>
+													<tr>
+														<td align="center"><font face="San_Francisco, Verdana, Times, serif" size="3pt"><strong>Usuário: </strong></font></td>
+														<td align="center"><input name="username" id="email" size="30" type="text"></td>
+													</tr>
+													<tr>
+														<td align="center"><font face="San_Francisco, Verdana, Times, serif" size="3pt"><strong>Senha:</strong></font></td>
+														<td align="center"><input name="password" id="senha" size="30" type="password"></td>
+														<td align="center" colspan="2"><button id="btnLogin" type="button">Entrar</button></td>
+													</tr>
+												</tbody>
+											</table>
+										</center>
+				
+								</form>
+									   
+						</div><!--/formulario-->           
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<footer>
+		
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-4">
+					<div class="contato">
+						<h3>Contato</h3>
+						<p>Rua Major Gote, 1000</p>
+						<p>Centro, Patos de Minas - MG</p>
+						<p>(34) 9999-9999</p>
+						<p>cinema@cinema.com</p>
+					</div>
+					
+				</div>
+
+				<div class="col-md-4">
+
+					<div class="social">
+
+						<h3>Redes Sociais</h3>
+
+						<ul>
+							<li>
+								<a href="#">
+									<span class="fa-stack fa-2x">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-twitter fa-stack-1x"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa-stack fa-2x">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-facebook fa-stack-1x"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa-stack fa-2x">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-google-plus fa-stack-1x"></i>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa-stack fa-2x">
+										<i class="fa fa-square-o fa-stack-2x"></i>
+										<i class="fa fa-instagram fa-stack-1x"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="mais">
+						<h3>EasyShop</h3></br>
+						<ul>
+							<li><a href="index.html">Área de login</a></li>
+							<li><a href="prod.html">Cadastro de Produtos</a></li>
+							<li><a href="estatisticas.html">Estatísticas</a></li>
+							
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+
+	<div class="copyright">
+		Copyright © Your Website 2017
+	</div>
+
+
+				<script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyCr2albSTxNiaqDLmpIKbAobnydpOqY0Dc",
+			authDomain: "easyshop-ac8dc.firebaseapp.com",
+			databaseURL: "https://easyshop-ac8dc.firebaseio.com",
+			projectId: "easyshop-ac8dc",
+			storageBucket: "easyshop-ac8dc.appspot.com",
+			messagingSenderId: "905287213957"
+		  };
+		  firebase.initializeApp(config);
+
+		  var database = firebase.database();
+		  //let auth = firebase.auth();
+
+		  let btn = document.getElementById('btnLogin');
+
+		  btn.addEventListener("click",()=>{
+		  	let email = document.getElementById('email').value;
+		  let senha = document.getElementById('senha').value;
+		  	
+		  		firebase.auth().signInWithEmailAndPassword(email, senha).then(
+
+		  				function(){
+
+		  					location.href="prod.html"
+		  				}).catch(function(error) {
+  				// Handle Errors here.
+  				var errorCode = error.code;
+  				var errorMessage = error.message;
+  			// ...
+				});
+
+		  });
+
+
+		</script>
+
+
+</body>
+</html>
+
+
+	
